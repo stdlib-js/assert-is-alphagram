@@ -24,32 +24,30 @@ limitations under the License.
 
 > Test if a value is an [alphagram][alphagram].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-alphagram
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isAlphagram = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isAlphagram;
-})();
-</script>
+var isAlphagram = require( '@stdlib/assert-is-alphagram' );
 ```
 
 #### isAlphagram( value )
@@ -85,13 +83,8 @@ var bool = isAlphagram( value );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isAlphagram = require( '@stdlib/assert-is-alphagram' );
 
 var out = isAlphagram( 'beep' );
 // returns true
@@ -107,18 +100,72 @@ out = isAlphagram( 'zba' );
 
 out = isAlphagram( 123 );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/assert-is-alphagram
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: is-alphagram [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ is-alphagram beep
+true
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'hello' | is-alphagram
+false
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -199,6 +246,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/assert-is-alphagram/tree/deno
 [umd-url]: https://github.com/stdlib-js/assert-is-alphagram/tree/umd
 [esm-url]: https://github.com/stdlib-js/assert-is-alphagram/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-alphagram/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-alphagram/main/LICENSE
 
@@ -208,7 +256,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-anagram]: https://github.com/stdlib-js/assert-is-anagram/tree/umd
+[@stdlib/assert/is-anagram]: https://github.com/stdlib-js/assert-is-anagram
 
 <!-- </related-links> -->
 
