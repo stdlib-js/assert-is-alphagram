@@ -24,30 +24,14 @@ limitations under the License.
 
 > Test if a value is an [alphagram][alphagram].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-alphagram
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isAlphagram = require( '@stdlib/assert-is-alphagram' );
+import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@deno/mod.js';
 ```
 
 #### isAlphagram( value )
@@ -84,7 +68,7 @@ var bool = isAlphagram( value );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var isAlphagram = require( '@stdlib/assert-is-alphagram' );
+import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@deno/mod.js';
 
 var out = isAlphagram( 'beep' );
 // returns true
@@ -106,66 +90,7 @@ out = isAlphagram( 123 );
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/assert-is-alphagram
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: is-alphagram [options] [<string>]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ is-alphagram beep
-true
-```
-
-To use as a [standard stream][standard-streams],
-
-```bash
-$ echo -n 'hello' | is-alphagram
-false
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -190,7 +115,7 @@ false
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -256,7 +181,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-anagram]: https://github.com/stdlib-js/assert-is-anagram
+[@stdlib/assert/is-anagram]: https://github.com/stdlib-js/assert-is-anagram/tree/deno
 
 <!-- </related-links> -->
 
