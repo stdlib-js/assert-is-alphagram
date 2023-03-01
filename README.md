@@ -24,94 +24,19 @@ limitations under the License.
 
 > Test if a value is an [alphagram][alphagram].
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/assert-is-alphagram
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-</section>
 
-<section class="usage">
 
-## Usage
 
-```javascript
-var isAlphagram = require( '@stdlib/assert-is-alphagram' );
-```
-
-#### isAlphagram( value )
-
-Tests if a `value` is an [alphagram][alphagram] (i.e., a sequence of characters arranged in alphabetical order).
-
-```javascript
-var value = 'beep';
-
-var bool = isAlphagram( value );
-// returns true
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   The function first checks that an input `value` is a `string` before validating that the `value` is an [alphagram][alphagram]. For non-string values, the function returns `false`.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint-disable no-new-wrappers -->
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var isAlphagram = require( '@stdlib/assert-is-alphagram' );
-
-var out = isAlphagram( 'beep' );
-// returns true
-
-out = isAlphagram( new String( 'beep' ) );
-// returns true
-
-out = isAlphagram( '' );
-// returns false
-
-out = isAlphagram( 'zba' );
-// returns false
-
-out = isAlphagram( 123 );
-// returns false
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -129,7 +54,7 @@ npm install -g @stdlib/assert-is-alphagram-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: is-alphagram [options] [<string>]
@@ -149,7 +74,7 @@ Options:
 
 <section class="notes">
 
-### Notes
+## Notes
 
 -   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
 
@@ -168,7 +93,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ is-alphagram beep
@@ -202,10 +127,9 @@ false
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/assert-is-alphagram`][@stdlib/assert-is-alphagram]</span><span class="delimiter">: </span><span class="description">test if a value is an alphagram.</span>
 -   <span class="package-name">[`@stdlib/assert-is-anagram`][@stdlib/assert/is-anagram]</span><span class="delimiter">: </span><span class="description">test if a value is an anagram.</span>
 
 </section>
@@ -225,7 +149,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -248,8 +172,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-alphagram.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-is-alphagram
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-alphagram-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-is-alphagram-cli
 
 [test-image]: https://github.com/stdlib-js/assert-is-alphagram/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/assert-is-alphagram/actions/workflows/test.yml?query=branch:main
