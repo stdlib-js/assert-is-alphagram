@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@deno/mod.js';
+import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@v0.2.1-deno/mod.js';
 ```
 
 #### isAlphagram( value )
@@ -79,7 +79,7 @@ var bool = isAlphagram( value );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@deno/mod.js';
+import isAlphagram from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphagram@v0.2.1-deno/mod.js';
 
 var out = isAlphagram( 'beep' );
 // returns true
